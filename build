@@ -1,0 +1,26 @@
+#!/bin/bash
+echo
+echo -n "Do you want to run npm install? (y/N) [N]: "
+read NPMINSTALL
+if [ "$NPMINSTALL" == "y" ]
+then
+  echo
+  npm install
+fi
+echo
+export APPLICATION_NAME=$1
+export ENVIRONMENT=$2
+if [ "$ENVIRONMENT" == "dev" ]
+  then
+    export NODE_ENV="development"
+elif [ "$ENVIRONMENT" == "stg" ]
+  then
+    export NODE_ENV="staging"
+elif [ "$ENVIRONMENT" == "prod" ]
+  then
+    export NODE_ENV="production"
+else
+  export NODE_ENV="development"
+fi
+export NODE_PATH=$NODE_PATH:./framework
+npm run build
