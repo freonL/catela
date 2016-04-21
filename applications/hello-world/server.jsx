@@ -1,8 +1,4 @@
-// You just need to import 'logger' once, it will install a global variable Logger
-import config from './config'
 import 'logger/server'
-import 'services/server'
-import 'plugins/server'
 import ExpressUniversalApplicationServer from 'server/ExpressUniversalApplicationServer'
 import reducers from 'reducers'
 import routes from 'routes'

@@ -1,10 +1,4 @@
-// You just need to import 'logger' once, it will install a global variable Logger
-import config from './config'
 import 'logger/client'
-import 'services/client'
-import 'plugins/client'
-import 'external/react-day-picker.css'
-import 'external/react-progress-bar.css'
 import UniversalApplicationClient from 'client/UniversalApplicationClient'
 import reducers from 'reducers'
 import routes from 'routes'
