@@ -25,7 +25,6 @@ let options = {
   initialState
 }
 
-global.__CONFIG__ = config
 global.__VIEW_CONTAINER__ = viewContainer
 
 const client = new HelloWorldApplicationClient(options)

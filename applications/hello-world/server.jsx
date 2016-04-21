@@ -20,7 +20,6 @@ class HelloWorldApplicationServer extends ExpressUniversalApplicationServer {
 let options = {
   ...__PROJECT__
 }
-global.__CONFIG__ = config
 
 const server = new HelloWorldApplicationServer(options)
 server.run()
